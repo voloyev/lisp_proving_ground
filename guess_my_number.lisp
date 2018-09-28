@@ -16,3 +16,18 @@
   (defparameter *small* 1)
   (defparameter *big* 100)
   (guess-my-number))
+
+;; local vars
+(let ((a 5)
+      (b 6))
+  (+ a b))
+
+;; local functions
+(flet ((f (n)
+         (+ n 1)))
+  (f 5))
+
+;; labels Why what
+(labels ((a (n)
+           (+ n 5))
+         (b (n))))
